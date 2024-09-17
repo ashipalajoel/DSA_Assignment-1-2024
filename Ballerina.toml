@@ -1,0 +1,8 @@
+[package]
+org = "js_ashipala"
+name = "online.shopping"
+version = "0.1.0"
+distribution = "2201.9.2"
+
+[build-options]
+observabilityIncluded = true
