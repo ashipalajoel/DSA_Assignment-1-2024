@@ -29,7 +29,7 @@ service "ShoppingService" on new grpc:Listener(9090) {
         return {sku: product.sku};
     }
 
-    // Stream multiple users to the server
+    
     remote function CreateUsers(stream<User, grpc:Error> userStream) returns CreateUsersResponse {
         check from User user in userStream
             do {
@@ -38,7 +38,6 @@ service "ShoppingService" on new grpc:Listener(9090) {
         return {message: "Users created successfully"};
     }
 
-    // Update product details by SKU
     remote function UpdateProduct(UpdateProductRequest request) returns Empty {
         foreach Product product in products {
             if product.sku == request.sku {
