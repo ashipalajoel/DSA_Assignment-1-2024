@@ -1,6 +1,6 @@
 [package]
 org = "js_ashipala"
-name = "online.shopping"
+name = "ShoppingC_client"
 version = "0.1.0"
 distribution = "2201.9.2"
 
